@@ -3,12 +3,12 @@ var baseURL = 'http://ajax.frontend.itheima.net'
 // 测试环境
 // 生产环境
 
-// 拦截所有ajax请求： get/post/ajax
+// 1拦截所有ajax请求： get/post/ajax
 $.ajaxPrefilter(function (params) {
-  // 拼接对应环境的服务器地址
+  // 1拼接对应环境的服务器地址
   params.url = baseURL + params.url;
 
-  // 对需要权限的接口配置头信息
+  //2 对需要权限的接口配置头信息
   // 必须以my开头才行
   if (params.url.indexOf('/my/') !== -1) {
     params.headers = {
