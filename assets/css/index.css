@@ -1,0 +1,58 @@
+/* 字体图标的样式 */
+.layui-icon{
+    margin-right:8px;
+    margin-left: 20px;
+}
+/* 底部字体的居中 */
+.layui-footer{
+    text-align: center;
+    font-size: 12px;
+}
+/* 字体图标 */
+.iconfont{
+    margin-right: 8px;
+}
+/* 超出的滚动条 */
+.layui-body{
+    overflow: hidden;
+}
+/* iframe的适配 */
+iframe{
+    width: 100%;
+    height: 100%;
+}
+/* 清除a的动画效果 */
+a{
+    transition: none!important;
+}
+
+.userinfo{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    user-select: none;
+}
+.layui-side-scroll .userinfo{
+    border-bottom:1px solid #000 ;
+}
+.text-avatar{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #009688;
+    text-align: center;
+    line-height: 40px;
+    /* 行内块元素  中线对齐  基线问题 */
+
+    vertical-align: middle;
+    font-size: 20px;
+    color: #fff!important;
+    margin-right: 8px;
+}
+
+.layui-nav-img{
+    width: 40px;
+    height: 40px;
+}
