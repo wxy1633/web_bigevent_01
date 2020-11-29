@@ -1,6 +1,6 @@
 $(function () {
     // 1.获取用户信息
-    getUserInfo()
+    getUserInof()
     // 2.退出按钮
     $('#btnLogout').on('click',function () {
         
@@ -18,7 +18,7 @@ $(function () {
 
 // 2获取用户信息 函数（封装到入口函数的外面了）
 // 原因：后面其他的页面要调用
-function getUserInfo() {
+function getUserInof() {
     $.ajax({
         method: 'GET',
         url: '/my/userinfo',

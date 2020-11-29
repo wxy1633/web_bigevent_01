@@ -23,7 +23,9 @@ $(function () {
     var layer = layui.layer
     $('#file').on('change', function (e) {
         //  3.1  拿到用户选择的文件
-        var file = e.target.file[0]
+        console.log(e.target);
+        var file = e.target.files[0]
+        console.log(file);
         // 前端非空校验
         if (file == undefined){
             layer.msg('出不来')

@@ -48,7 +48,7 @@ $(function () {
                 if(res.status !== 0) return layer.msg('用户信息修改失败！')
                 layer.msg('恭喜您，用户修改信息成功！')
                 // 调用父亲的函数  重新渲染图片
-                window.parent.getUserInfo()
+                window.parent.getUserInof()
             }
         })
     })

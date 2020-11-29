@@ -21,7 +21,7 @@ $.ajaxPrefilter(function (params) {
   params.complete = function (res) {
     console.log(res.responseJSON);
     var obj = res.responseJSON
-    console.log(obj);
+    // console.log(obj);
     if (obj.status == 1 && obj.message == '身份认证失败！') {
       // 1.清空本地token
       localStorage.removeItem('token')
